@@ -4,6 +4,9 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 
+#install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
